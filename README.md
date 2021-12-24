@@ -1,2 +1,2 @@
 # Talk-Shakespeare
- A GUI app that converts normal english to Shakespeare Lamguage using FunTranslation API.
+ A GUI app that converts normal english to Shakespeare Language using FunTranslation API.
