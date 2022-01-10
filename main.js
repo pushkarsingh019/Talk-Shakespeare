@@ -3,6 +3,7 @@
 var inputText = document.querySelector("#input");
 var btn = document.querySelector("#btn-translate");
 var outputText = document.querySelector("#output");
+var copyText1 = document.querySelector("#copy-text");
 
 //Essentials to Interact with the server
 var serverUrl = "https://api.funtranslations.com/translate/shakespeare.json";
@@ -23,6 +24,16 @@ function eventHandler(){
     .catch(errorHandler)
 }
 
+//Function to copy text on the clipboard
+function copyToClipboard() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(outputText.value).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+
+
 // Url Generator to generate the url
 function urlGenerator(text){
     return serverUrl + "?" + "text=" + text
@@ -36,3 +47,4 @@ function errorHandler(error){
 
 // 1. EventHandler --> the function that is triggered when someone clicks the button
 btn.addEventListener("click", eventHandler)
+copyText1.addEventListener("click", copyToClipboard)
