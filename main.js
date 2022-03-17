@@ -1,3 +1,5 @@
+alert("yo chinmayee")
+
 // The main JavaScript File
 // Creating references for each element
 var inputText = document.querySelector("#input");
