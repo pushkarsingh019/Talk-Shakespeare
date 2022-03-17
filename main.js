@@ -1,4 +1,4 @@
-alert("yo chinmayee")
+alert("yo Pushkar")
 
 // The main JavaScript File
 // Creating references for each element
