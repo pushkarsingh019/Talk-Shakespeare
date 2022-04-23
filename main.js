@@ -1,4 +1,4 @@
-alert("Hello Madhav")
+
 
 // The main JavaScript File
 // Creating references for each element
