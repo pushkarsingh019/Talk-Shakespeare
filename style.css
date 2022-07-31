@@ -66,4 +66,7 @@ a {
     left: 0;
     right: 0;
 }
+a .main {
+    text-decoration: none;
+}
 
